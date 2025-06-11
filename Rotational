@@ -1,0 +1,19 @@
+package Strings_50_problems;
+
+public class RotationalString {
+
+	
+	static boolean areRotations(String s1,String s2) {
+		s1=s1+s1;
+		return s1.contains(s2);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="aab";
+		String s2="baa";
+		
+		System.out.print(areRotations(s1,s2));
+	}
+
+}
