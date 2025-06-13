@@ -1,0 +1,22 @@
+package Strings_50_problems;
+
+public class Divisibleby7 {
+	public static boolean isDivBy7(int n)
+    {
+        if (n == 0)
+            return true;
+        while (n >= 7) {
+            n -= 7;
+        }
+        return n == 0;
+    }
+
+    public static void main(String[] args)
+    {
+        int n = 371;
+        if (isDivBy7(Math.abs(n)))
+            System.out.println("True");
+        else
+            System.out.println("False");
+    }
+}
